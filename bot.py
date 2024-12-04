@@ -197,8 +197,8 @@ dialog.list = []
 dialog.count = 0
 dialog.user = {}
 
-chatgpt = ChatGptService(token="gpt:6iWpGTIVtrvZB0KTFlGqJFkblB3Tjikl0aobFUM6zUmVCkXU")
-app = ApplicationBuilder().token("7357940911:AAEq9Q64uvguQpPYZXogbZme7EzkQWHjwvA").build()
+chatgpt = ChatGptService(token="")
+app = ApplicationBuilder().token("").build()
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, hello))
 app.add_handler(CallbackQueryHandler(date_button, pattern="^date_.*"))
 app.add_handler(CallbackQueryHandler(message_button, pattern="^message_.*"))
